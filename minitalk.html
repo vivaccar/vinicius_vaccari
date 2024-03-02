@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Vinicius</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="horizontal-bar">
+            <ul>
+                <a href="index.html"><li class="bar-li"><img src="images/up.png" alt="VINICIUS VACCARI"></li></a>
+                <a href="index.html#about"><li class="bar-li">ABOUT ME</li></a>
+                <a href="index.html#skills"><li class="bar-li">EDUCATION & SKILLS</li></a>
+                <a href="projects.html"><li class="page">42 PROJECTS</li></a>
+            </ul>
+        </div>
+        <div class="container">
+            <h1 class="proj-title">MINITALK</h1>
+            <p class="proj-p">Essentially, minitalk consists of communication between two processes through the exchange of signals between them. We will have 2 programs, the server and the client.</p>
+            <p>Check my minitalk on GitHub <a href="https://github.com/vivaccar/minitalk">Here.</a></p>
+            <h4>Allowed functions</h4>
+            <p class="proj-p">write, signal, sigemptyset, sigaddset, sigaction, kill, getpid, malloc, free, pause, sleep, usleep, exit.</p>
+            <h4>Signals</h4>
+            <p class="proj-p">Signals in computing are like messages sent by the operating system to programs, telling them that something important has happened. It's a way for the system to notify programs about events like when a user presses Ctrl+C to interrupt a program or when a program encounters an error. For example, when you press Ctrl+C to stop a running program, you're actually sending a signal to that program telling it to stop. </p>
+            <p class="proj-p">In minitalk, we can use two specific signals to send and receive messages. SIGUSR1 and SIGUSR2 are signals in Unix systems that programs can use for custom communication between processes. They're like special messages that programs can send to each other to trigger specific actions or events.            </p>
+            <h4>Communication</h4>
+            <p class="proj-p">To start, the server should be initialized first and immediately display its PID, which is the unique identifier number of this process in the operating system.</p>
+            <p class="proj-p">Then the client should be executed and receive two parameters: the PID of the server and the message (string) to be sent.</p>
+            <p class="proj-p">The client sends each character bit by bit to the server through binary operations. How does it send? In this case, it sends signals where SIGUSR1 represents 0 and SIGUSR2 represents 1. Therefore, the client converts each character bit by bit while the server receives these signals and converts them back to decipher the received message. The server should print the message as output.</p>
+            <p class="proj-p">The server is initialized and displays the PID.</p>
+            <p><img src="images/mini1.png" alt=""></p>
+            <p class="proj-p">The client gets the PID and send the string.</p>
+            <p><img src="images/mini2.png" alt=""></p>
+            <p class="proj-p">The server received the message correctly and printed it.</p>
+            <p><img src="images/mini3.png" alt="" style="width: 100%;"></p>
+            <br>
+        </div>
+        <div class="media">
+            <ul>
+                <li><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                <li><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></li></a>
+                <li><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+            </ul>
+        </div>
+    </body>
+</html>

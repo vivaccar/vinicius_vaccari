@@ -1,0 +1,303 @@
+/* PRINCIPAL */
+
+.horizontal-bar{
+    height: 115px;
+    background-color: rgb(58, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #0D80BF;
+    position: sticky;
+}
+
+.horizontal-bar ul{
+    margin: 0px;
+}
+
+.page{
+    margin: 100px;
+    color: white;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline;
+}
+
+.bar-li{
+    margin: 100px;
+    color: #0D80BF;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline;
+}
+
+.horizontal-bar li:hover {
+    text-decoration: underline; /* Adiciona uma linha sublinhada apenas quando o mouse passa por cima */
+}
+
+
+.img_bar{
+    margin-top: 22px;
+    width: 170px;
+    height: 160px;
+}
+
+
+.cont{
+    margin: 82px;
+    display: flex;
+    flex-direction: row
+}
+
+.conteudo {
+    margin-top: 50px;
+    width: 50%;
+  }
+  
+.lateral {
+    flex: 50%;
+  }
+
+.name{
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: #0D80BF;
+    margin: 0px;
+  }
+
+.occupation{
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: grey;
+    margin-right: 150px;
+}
+
+.lateral li{
+    list-style-type: none;
+    margin: 40px;
+    align-items: start;
+}
+
+.with-me{
+    text-align: center;
+    font-size: 17px;
+    color: rgb(58, 56, 56);
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+}
+
+.social{
+    text-align: center;
+}
+
+.media{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px gainsboro;
+}
+
+
+.media li{
+    list-style-type: none;
+    margin: 120px;
+    display: inline;
+    margin-bottom: 30px;
+}
+
+.site-img{
+    float: right;
+    margin-right: 30px;
+}
+
+/* ABOUT ME */
+
+  
+  .container {
+    max-width: 58%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .container-title{
+    background-color: black;
+  }
+
+  .e-s{
+    text-align: center;
+    color: #0D80BF;
+    font-family: fantasy;
+  }
+  
+  /* Estilos da seção Sobre Mim */
+  .about-me {
+    background-color: white;
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px gainsboro;
+  }
+  
+  .about-me h1 {
+    margin-top: 0px;
+    text-align: start;
+    color: #0D80BF;
+    font-family: fantasy;
+    font-size: 40px;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 40px;
+  }
+  
+  .bio {
+    margin-top: 10px;
+    max-width: 90%;
+  }
+  
+  .bio p {
+    margin-top: 10px;
+    font-family: Helvetica, sans-serif, arial;
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .skills {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+.languages{
+    margin-left: 200px;
+    margin-top: 35px;
+}
+
+.languages h3{
+    color: #666;
+}
+
+.languages ul{
+    margin-top: 30px;
+}
+
+.languages li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 35px;
+    width: 48px;
+    height: 48px;
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects ul{
+  margin-top: 40px;
+}
+
+.projects li{
+  display: inline;
+  list-style-type: none;
+  margin: 40px;
+}
+
+.projects img{
+  border-radius: 10%;
+  border: 2px solid darkblue;
+}
+
+.proj-title{
+  margin-top: 26px;
+  text-align: center;
+}
+
+.container h4{
+  margin-top: 26px;
+}
+
+.img-down{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proj-p{
+  margin-top: 26px;
+}
+
+.languages p {
+  margin-top: 10px;
+  font-family: Helvetica, sans-serif, arial;
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.languages h3{
+  font-family: fantasy;
+  color: #333;
+}
+
+.habiliti{
+  font-family: Helvetica, sans-serif, arial;
+  color: #666;
+  font-size: 18px;
+}
+
+.centered-list {
+  margin-left: 30px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.centered-list li{
+  display: inline;
+  margin: 15px;
+}
+
+.last-div{
+  margin-left: 200px;
+  margin-top: 0px;
+}
+
+.last-div h3{
+  margin-bottom: 25px;
+  font-family: fantasy;
+  color: #333;
+}
+
+.certs{
+    margin-left: 200px;
+    margin-top: 40px;
+  }
+
+  .certs h3{
+    margin-bottom: 25px;
+    font-family: fantasy;
+    color: #333;
+  }
+
+  .certs li{
+    margin: 15px;
+    font-family: Helvetica, sans-serif, arial;
+    color: #666;
+    font-size: 18px;
+  }

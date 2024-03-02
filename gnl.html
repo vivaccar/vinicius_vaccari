@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Vinicius</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="horizontal-bar">
+            <ul>
+                <a href="index.html"><li class="bar-li"><img src="images/up.png" alt="VINICIUS VACCARI"></li></a>
+                <a href="index.html#about"><li class="bar-li">ABOUT ME</li></a>
+                <a href="index.html#skills"><li class="bar-li">EDUCATION & SKILLS</li></a>
+                <a href="projects.html"><li class="page">42 PROJECTS</li></a>
+            </ul>
+        </div>
+        <div class="container">
+            <h1 class="proj-title">GET NEXT LINE</h1>
+            <p class="proj-p">The get_next_line() function in C reads a file line by line, allowing repeated calls to retrieve each subsequent line from the file or standard input. It returns the read line or NULL in case of an error or when there are no more lines to read. This project not only reinforces core C programming skills but also requires a solid understanding of file manipulation, dynamic memory management, static variables, and compilation processes.</p>
+            <p>Check my Get_next_line on GitHub <a href="https://github.com/vivaccar/Get_next_line">Here.</a></p>
+            <h4>Allowed functions</h4>
+            <p class="proj-p">Malloc, free, read.</p>
+            <h4>Open()</h4>
+            <p class="proj-p">This function is not necessary within the function, but it is mandatory to use it in the main function and to know how to use it to conduct the tests of this project.</p>
+            <p class="proj-p"><strong>Opening Files:</strong> The open() function opens a file and returns a file descriptor (an integer representing the file in the operating system).</p>
+            <p class="proj-p"><strong>Access Modes:</strong> The access mode determines how the file will be opened. Common access modes include O_RDONLY (read-only), O_WRONLY (write-only), and O_RDWR (read-write).</p>
+            <p class="proj-p"><strong>File Creation Flags:</strong> Optional flags can be specified to control the behavior of file creation if the file does not exist. For example, O_CREAT indicates that the file should be created if it doesn't exist.</p>
+            <p class="proj-p"><strong>Error Handling:</strong> If the open() function fails, it returns -1, indicating an error. You can use errno to determine the specific error that occurred.</p>
+            <h4>Read()</h4>
+            <p class="proj-p"><strong>Reading Data:</strong> The read() function reads data from the specified file descriptor (fd) into a buffer provided by the programmer.</p>
+            <p class="proj-p"><strong>Arguments:</strong> It takes three arguments: the file descriptor (fd), a pointer to the buffer where the data will be stored, and the number of bytes to read.</p>
+            <p class="proj-p"><strong>Return Value:</strong> It returns the number of bytes read, or -1 if an error occurs. If read() returns 0, it means that the end of the file has been reached.</p>
+            <p class="proj-p"><strong>Error Handling:</strong> If read() fails, it returns -1, and you can use errno to determine the specific error that occurred.</p>
+            <h4>What are static variables?</h4>
+            <p class="proj-p">Static variables in programming are a type of variable that retains its value between function calls. Unlike local variables, which are created and destroyed every time a function is called, static variables persist throughout the program's execution.</p>
+            <p class="proj-p"><strong>Initialization:</strong> Static variables are initialized only once, before the program starts executing. They are initialized to their default values if not explicitly initialized by the programmer.</p>
+            <p class="proj-p"><strong>Lifetime:</strong> Static variables have a lifetime equal to the duration of the program. They are created when the program starts and exist until the program terminates.</p>
+            <p class="proj-p"><strong>Scope:</strong> Static variables have scope limited to the function or block in which they are declared. They are not accessible from outside the function or block.</p>
+            <h4>File I/O and Error Handling:</h4>
+            <p class="proj-p">Developing the get_next_line() function requires a deep understanding of file I/O operations, especially reading lines from a file descriptor. The implementation should be robust enough to handle errors and return NULL when necessary, ensuring reliable operation in various scenarios.</p>
+            <h4>Grade</h4>
+            <img src="images/125.png">
+        </div>
+        <div class="media">
+            <ul>
+                <li><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                <li><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></li></a>
+                <li><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+            </ul>
+        </div>
+    </body>
+</html>

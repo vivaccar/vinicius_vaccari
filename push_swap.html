@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Vinicius</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="horizontal-bar">
+            <ul>
+                <a href="index.html"><li class="bar-li"><img src="images/up.png" alt="VINICIUS VACCARI"></li></a>
+                <a href="index.html#about"><li class="bar-li">ABOUT ME</li></a>
+                <a href="index.html#skills"><li class="bar-li">EDUCATION & SKILLS</li></a>
+                <a href="projects.html"><li class="page">42 PROJECTS</li></a>
+            </ul>
+        </div>
+        <div class="container">
+            <h1 class="proj-title">PUSH_SWAP</h1>
+            <p class="proj-p">PushSwap is a sorting algorithm project that involves organizing a random stack of numbers in ascending order using two stacks, named 'a' and 'b.' The goal is to achieve the desired order through a set of predefined operations. The operations include swapping elements, pushing elements between stacks, and rotating elements within a stack.</p>
+            <p class="proj-p"><img src="images/PUSH.gif" class="img-down"></p>
+            <p>Check my push_swap on GitHub <a href="https://github.com/vivaccar/Push_swap">Here.</a></p>
+            <h4>Rules</h4>
+            <p class="proj-p">You have two stacks named a and b. At the beginning: Stack a contains a random amount of negative and/or positive numbers, which cannot be duplicated. Stack b is initially empty. The objective is to sort the numbers in ascending order into stack a.</p>
+            <h4>Available Operations</h4>
+            <p>sa (swap a): Swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements.</p>
+            <p>sb (swap b): Swap the first 2 elements at the top of stack b. Do nothing if there is only one or no elements.</p>
+            <p>ss: Perform sa and sb at the same time.</p>
+            <p>pa (push a): Take the first element at the top of b and put it at the top of a. Do nothing if b is empty.</p>
+            <p>pb (push b): Take the first element at the top of a and put it at the top of b. Do nothing if a is empty.</p>
+            <p>ra (rotate a): Shift up all elements of stack a by 1. The first element becomes the last one.</p>
+            <p>rb (rotate b): Shift up all elements of stack b by 1. The first element becomes the last one.</p>
+            <p>rr: Perform ra and rb at the same time.</p>
+            <p>rra (reverse rotate a): Shift down all elements of stack a by 1. The last element becomes the first one.</p>
+            <p>rrb (reverse rotate b): Shift down all elements of stack b by 1. The last element becomes the first one.</p>
+            <p>rrr: Perform rra and rrb at the same time.</p>
+            <h4>Turkish Algorithm</h4>
+            <p class="proj-p">Here's a step-by-step breakdown of the algorithm:</p>
+            <p>Initial Setup: Push two numbers from STACK_A to STACK_B</p>
+            <p>For each number in STACK_A, calculate the number of operations needed to push it into the correct position in STACK_B(above the smallest number, closest). Operations may include rotations of the stacks and pushing elements. Keep track of the cheapest number. Push the Cheapest Number.</p>
+            <p>Push the cheapest number until stack A has only 3 numbers.</p>
+            <p>These three elements can be sorted with one or two operations</p>
+            <p>Push all elements from STACK_B back to STACK_A. Before pushing each element, check if it's in the correct position; if not, rotate STACK_A until the correct position is reached.</p>
+            <p>Ensure that the minimum number is at the top of STACK_A to ensure the entire stack is sorted.</p>
+            <h4>Grade</h4>
+            <img src="images/125.png">
+        </div>
+        <div class="media">
+            <ul>
+                <li><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                <li><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></li></a>
+                <li><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+            </ul>
+        </div>
+    </body>
+</html>
