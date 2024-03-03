@@ -1,5 +1,38 @@
 /* PRINCIPAL */
 
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos móveis aqui */
+  .cont {
+      flex-direction: column;
+  }
+  .lateral {
+      flex: 100%;
+  }
+  .conteudo {
+      width: 100%;
+      text-align: center;
+  }
+  .social {
+      margin: 10px;
+  }
+  .about-content {
+      flex-direction: column;
+  }
+  .profile-picture img {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+  .languages {
+      margin-left: 0;
+  }
+  .last-div {
+      margin-left: 0;
+  }
+  .certs {
+      margin-left: 0;
+  }
+}
+
 .horizontal-bar{
     height: 115px;
     background-color: rgb(58, 56, 56);
