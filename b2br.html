@@ -1,52 +1,84 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Vinicius</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="horizontal-bar">
-            <ul>
-                <a href="index.html"><li class="bar-li"><img src="images/up.png" alt="VINICIUS VACCARI"></li></a>
-                <a href="index.html#about"><li class="bar-li">ABOUT ME</li></a>
-                <a href="index.html#skills"><li class="bar-li">EDUCATION & SKILLS</li></a>
-                <a href="projects.html"><li class="page">42 PROJECTS</li></a>
-            </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Vaccari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"> <!-- Adiciona um container para centralizar os itens -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/up.png" alt="VINICIUS VACCARI" class="img_bar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- Adiciona a classe justify-content-center para centralizar -->
+                <ul class="navbar-nav" style="font-size: 20px;"> <!-- Define o tamanho da fonte -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" style="color: #0D80BF; margin-right: 80px;">ABOUT ME</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills" style="color: #0D80BF; margin-right: 80px;">EDUCATION & SKILLS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">42 PROJECTS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center">BORN 2 BE ROOT</h1>
+                <p class="proj-p">This project consists of creating a virtual machine and implementing an operating system following specific rules.</p>
+                <h4 class="text-center">What is a Virtual Machine?</h4>
+                <p class="proj-p">A virtual machine is a software-based emulation of a physical computer that operates like an independent system. It allows users to run multiple operating systems and applications on a single physical machine.</p>
+                <h4 class="text-center">LVM</h4>
+                <p class="proj-p">It is a system that allows for the dynamic allocation and management of storage on Linux systems. With LVM, you can create logical volumes that span multiple physical disks, resize volumes on-the-fly, and perform snapshots for backups. It offers flexibility and ease of management for storage resources, allowing administrators to better utilize disk space and simplify storage management tasks.</p>
+                <h4 class="text-center">App Armor</h4>
+                <p class="proj-p">AppArmor is a security feature in Linux that helps protect your system by controlling what resources and actions individual applications can access. It works by creating profiles for each application, which define what it can and cannot do. This helps prevent malicious actions and enhances system security.</p>
+                <h4 class="text-center">Apt and Aptitude</h4>
+                <p class="proj-p">APT (Advanced Package Tool) and Aptitude are both package management tools for Debian-based Linux distributions like Ubuntu. APT is more commonly used for scripting and automated package management tasks, while Aptitude is preferred for interactive package management by users who prefer a text-based interface.</p>
+                <h4 class="text-center">SSH</h4>
+                <p class="proj-p">SSH, or Secure Shell, is a cryptographic network protocol that enables secure communication and remote access between computers over an unsecured network. It provides a secure channel for executing commands, transferring files, and managing remote systems by encrypting all data exchanged between the client and server, thus preventing eavesdropping and unauthorized access.</p>
+                <h4 class="text-center">UFW</h4>
+                <p class="proj-p">UFW (Uncomplicated Firewall) is a user-friendly command-line tool for managing firewall rules on Linux systems, particularly those based on Ubuntu. It provides a simplified interface for configuring and managing firewall settings, allowing users to easily create rules to allow or block incoming and outgoing network traffic. With UFW, administrators can quickly and effectively secure their systems by defining rules to control which connections are permitted or denied.</p>
+                <h4 class="text-center">SUDO</h4>
+                <p class="proj-p">Sudo, short for "superuser do," is a command-line utility in Unix-like operating systems that allows users to execute commands with the privileges of another user, typically the superuser (root). It enables users to perform administrative tasks or run commands that require elevated permissions without needing to log in as the root user directly.</p>
+                <h4 class="text-center">Monitoring Script</h4>
+                <p class="proj-p">The task involves creating a bash script named "monitoring.sh" that displays specific system information on all terminals every 10 minutes upon server startup. The script must not show any errors and should include details such as the operating system architecture and kernel version, number of physical and virtual processors, available RAM and memory utilization rate, processor utilization rate, last reboot date and time, LVM activation status, active connections, number of users, server's IPv4 address and MAC address, and the number of commands executed with sudo. The script should utilize the wall command for displaying information and can optionally include a banner.</p>
+                <h4 class="text-center">Bonus Part</h4>
+                <p class="proj-p">• Set up partitions correctly, must have a structure similar to the one below:</p>
+                <div class="text-center">
+                    <img src="images/bonusborn.png" style="width: 100%;">
+                </div>
+                <p class="proj-p">• Set up a functional WordPress website with the following services: lighttpd, MariaDB, and PHP.</p>
+                <h4 class="text-center">Grade</h4>
+                <div>
+                    <img src="images/125.png">
+                </div>
+            </div>
+        </div>
+    </div>
+        <br>
         <div class="container">
-            <h1 class="proj-title">BORN 2 BE ROOT</h1>
-            <p class="proj-p">This project consists of creating a virtual machine and implementing an operating system following specific rules.</p>
-            <h4>What is a Virtual Machine?</h4>
-            <p class="proj-p">A virtual machine is a software-based emulation of a physical computer that operates like an independent system. It allows users to run multiple operating systems and applications on a single physical machine.</p>
-            <h4>LVM</h4>
-            <p class="proj-p">It is a system that allows for the dynamic allocation and management of storage on Linux systems. With LVM, you can create logical volumes that span multiple physical disks, resize volumes on-the-fly, and perform snapshots for backups. It offers flexibility and ease of management for storage resources, allowing administrators to better utilize disk space and simplify storage management tasks.</p>
-            <h4>App Armor</h4>
-            <p class="proj-p">AppArmor is a security feature in Linux that helps protect your system by controlling what resources and actions individual applications can access. It works by creating profiles for each application, which define what it can and cannot do. This helps prevent malicious actions and enhances system security.</p>
-            <h4>Apt and Aptitude</h4>
-            <p class="proj-p">APT (Advanced Package Tool) and Aptitude are both package management tools for Debian-based Linux distributions like Ubuntu. APT is more commonly used for scripting and automated package management tasks, while Aptitude is preferred for interactive package management by users who prefer a text-based interface.</p>
-            <h4>SSH</h4>
-            <p class="proj-p">SSH, or Secure Shell, is a cryptographic network protocol that enables secure communication and remote access between computers over an unsecured network. It provides a secure channel for executing commands, transferring files, and managing remote systems by encrypting all data exchanged between the client and server, thus preventing eavesdropping and unauthorized access.</p>
-            <h4>UFW</h4>
-            <p class="proj-p">UFW (Uncomplicated Firewall) is a user-friendly command-line tool for managing firewall rules on Linux systems, particularly those based on Ubuntu. It provides a simplified interface for configuring and managing firewall settings, allowing users to easily create rules to allow or block incoming and outgoing network traffic. With UFW, administrators can quickly and effectively secure their systems by defining rules to control which connections are permitted or denied.</p>
-            <h4>SUDO</h4>
-            <p class="proj-p">Sudo, short for "superuser do," is a command-line utility in Unix-like operating systems that allows users to execute commands with the privileges of another user, typically the superuser (root). It enables users to perform administrative tasks or run commands that require elevated permissions without needing to log in as the root user directly.</p>
-            <h4>Monitoring Script</h4>
-            <p class="proj-p">The task involves creating a bash script named "monitoring.sh" that displays specific system information on all terminals every 10 minutes upon server startup. The script must not show any errors and should include details such as the operating system architecture and kernel version, number of physical and virtual processors, available RAM and memory utilization rate, processor utilization rate, last reboot date and time, LVM activation status, active connections, number of users, server's IPv4 address and MAC address, and the number of commands executed with sudo. The script should utilize the wall command for displaying information and can optionally include a banner.</p>
-            <h4>Bonus Part</h4>
-            <p class="proj-p">• Set up partitions correctly, must have a structure similar to the one below:</p>
-            <img src="images/bonusborn.png">
-            <p class="proj-p">• Set up a functional WordPress website with the following services: lighttpd, MariaDB, and PHP.</p>
-            <h4>Grade</h4>
-            <img src="images/125.png">
-        </div>
-        <div class="media">
-            <ul>
-                <li><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
-                <li><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></li></a>
-                <li><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
-            </ul>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="media">
+                        <ul class="list-inline d-flex justify-content-center align-items-center">
+                            <li class="list-inline-item mr-3"><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item mr-3"><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

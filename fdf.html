@@ -1,50 +1,81 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Vinicius</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="horizontal-bar">
-            <ul>
-                <a href="index.html"><li class="bar-li"><img src="images/up.png" alt="VINICIUS VACCARI"></li></a>
-                <a href="index.html#about"><li class="bar-li">ABOUT ME</li></a>
-                <a href="index.html#skills"><li class="bar-li">EDUCATION & SKILLS</li></a>
-                <a href="projects.html"><li class="page">42 PROJECTS</li></a>
-            </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Vaccari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"> <!-- Adiciona um container para centralizar os itens -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/up.png" alt="VINICIUS VACCARI" class="img_bar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- Adiciona a classe justify-content-center para centralizar -->
+                <ul class="navbar-nav" style="font-size: 20px;"> <!-- Define o tamanho da fonte -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" style="color: #0D80BF; margin-right: 80px;">ABOUT ME</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills" style="color: #0D80BF; margin-right: 80px;">EDUCATION & SKILLS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">42 PROJECTS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="proj-title text-center">FDF</h1>
+                <p class="proj-p">This project involves creating a 3D representation model of a landscape by connecting points (x, y, z), where X represents the horizontal position, Y represents the vertical position, and Z corresponds to the height. To draw the map, the program reads a very simple file.</p>
+                <p><strong>Input:</strong></p>
+                <p class="proj-p"><img src="images/EXAMPLEFDF.jpg" style="width: 100%;"></p>
+                <p><strong>Output:</strong></p>
+                <p class="proj-p"><img src="images/42FDF.jpg" style="width: 100%;"></p>
+                <p>Check my fdf on GitHub <a href="https://github.com/vivaccar/fdf">Here.</a></p>
+                <h4 class="text-center">MiniLib X</h4>
+                <p class="proj-p">Minilib X is a simple graphics library provided to 42 students to complete this project. The library provides functions for opening a graphical window, drawing pixels on the screen, and handling mouse and keyboard events. You can see a more comprehensive documentation at this link <a href="https://harm-smits.github.io/42docs/libs/minilibx">harm-smits.github.io/42docs/libs/minilibx.</a></p>
+                <h4 class="text-center">Line drawing</h4>
+                <p class="proj-p">Given the coordinates of two points A(x1, y1) and B(x2, y2), the objective is to determine all the intermediate points necessary to draw the line AB on a computer screen composed of pixels.</p>
+                <p class="proj-p"><img src="images/bresenhamLine.png" style="width: 80%;"></p>
+                <p class="proj-p">To draw the lines correctly, I used an algorithm called Bresenham. The algorithm works by incrementally selecting the next pixel to plot along the line between two given points. It considers the slope of the line segment and intelligently chooses the pixels that best approximate the ideal line while minimizing error. By efficiently determining which points to plot, the Bresenham algorithm achieves accurate line drawing with minimal computational overhead.</p>
+                <h4 class="text-center">Isometric projection</h4>
+                <p class="proj-p">In the FdF project, isometric projection is utilized to represent 3D objects on a 2D screen. Isometric projection involves projecting three-dimensional objects onto a two-dimensional plane in a way that preserves the relative proportions and angles of the object's faces.</p>
+                <p class="proj-p">To obtain the projection, I simply transformed the x and y coordinates using this calculation:</p>
+                <p class="proj-p"><img src="images/iso.png" style="width: 80%;"></p>
+                <br>
+                <p>julia.fdf</p>
+                <p class="proj-p"><img src="images/JULIAFDF.jpg" style="width: 100%;"></p>
+                <h4 class="text-center">Grade</h4>
+                <div>
+                    <img src="images/125.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <br>
         <div class="container">
-            <h1 class="proj-title">FDF</h1>
-            <p class="proj-p">This project involves creating a 3D representation model of a landscape by connecting points (x, y, z), where X represents the horizontal position, Y represents the vertical position, and Z corresponds to the height. To draw the map, the program reads a very simple file.</p>
-            <p><strong>Input:</strong></p>
-            <p class="proj-p"><img src="images/EXAMPLEFDF.jpg" style="width: 100%;"></p>
-            <p><strong>Output:</strong></p>
-            <p class="proj-p"><img src="images/42FDF.jpg" style="width: 100%;"></p>
-            <p>Check my fdf on GitHub <a href="https://github.com/vivaccar/fdf">Here.</a></p>
-            <h4>MiniLib X</h4>
-            <p class="proj-p">Minilib X is a simple graphics library provided to 42 students to complete this project. The library provides functions for opening a graphical window, drawing pixels on the screen, and handling mouse and keyboard events. You can see a more comprehensive documentation at this link <a href="https://harm-smits.github.io/42docs/libs/minilibx">harm-smits.github.io/42docs/libs/minilibx.</a></p>
-            <h4>Line drawing</h4>
-            <p class="proj-p">Given the coordinates of two points A(x1, y1) and B(x2, y2), the objective is to determine all the intermediate points necessary to draw the line AB on a computer screen composed of pixels.</p>
-            <p class="proj-p"><img src="images/bresenhamLine.png" style="width: 80%;"></p>
-            <p class="proj-p">To draw the lines correctly, I used an algorithm called Bresenham. The algorithm works by incrementally selecting the next pixel to plot along the line between two given points. It considers the slope of the line segment and intelligently chooses the pixels that best approximate the ideal line while minimizing error. By efficiently determining which points to plot, the Bresenham algorithm achieves accurate line drawing with minimal computational overhead.</p>
-            <h4>Isometric projection</h4>
-            <p class="proj-p">In the FdF project, isometric projection is utilized to represent 3D objects on a 2D screen. Isometric projection involves projecting three-dimensional objects onto a two-dimensional plane in a way that preserves the relative proportions and angles of the object's faces.</p>
-            <p class="proj-p">To obtain the projection, I simply transformed the x and y coordinates using this calculation:</p>
-            <p class="proj-p"><img src="images/iso.png" style="width: 80%;"></p>
-            <br>
-            <p>julia.fdf</p>
-            <p class="proj-p"><img src="images/JULIAFDF.jpg" style="width: 100%;"></p>
-            <h4>Grade</h4>
-            <img src="images/125.png">
-        </div>
-        <div class="media">
-            <ul>
-                <li><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
-                <li><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></li></a>
-                <li><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
-            </ul>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="media">
+                        <ul class="list-inline d-flex justify-content-center align-items-center">
+                            <li class="list-inline-item mr-3"><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item mr-3"><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

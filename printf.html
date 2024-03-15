@@ -1,46 +1,78 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Vinicius</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="horizontal-bar">
-            <ul>
-                <a href="index.html"><li class="bar-li"><img src="images/up.png" alt="VINICIUS VACCARI"></li></a>
-                <a href="index.html#about"><li class="bar-li">ABOUT ME</li></a>
-                <a href="index.html#skills"><li class="bar-li">EDUCATION & SKILLS</li></a>
-                <a href="projects.html"><li class="page">42 PROJECTS</li></a>
-            </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Vaccari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"> <!-- Adiciona um container para centralizar os itens -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/up.png" alt="VINICIUS VACCARI" class="img_bar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- Adiciona a classe justify-content-center para centralizar -->
+                <ul class="navbar-nav" style="font-size: 20px;"> <!-- Define o tamanho da fonte -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" style="color: #0D80BF; margin-right: 80px;">ABOUT ME</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills" style="color: #0D80BF; margin-right: 80px;">EDUCATION & SKILLS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">42 PROJECTS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="proj-title text-center">FT_PRINTF</h1>
+                <p>This project aims to recreate the printf function in C, one of the most fundamental functions in the language.</p>
+                <div class="text-center">
+                    <img src="images/explanation.png" class="img-down" style="width: 100%;">
+                </div>
+                <p>Check my Ft_Printf on GitHub <a href="https://github.com/vivaccar/Ft_printf">Here.</a></p>
+                <p>When recreating the printf function, you will need to handle formatted strings by interpreting format characters (%d, %i, %c %s, %p, %h, %H) and replacing them with the corresponding values.</p>
+                <h4 class="text-center">Allowed Functions</h4>
+                <p>malloc, free, write, va_start, va_arg, va_copy, va_end</p>
+                <h4 class="text-center">Variadic Arguments</h4>
+                <p>In C programming, va-args (variadic arguments) is a feature that allows functions to accept a variable number of arguments. This means that you can define functions that can take different numbers of arguments depending on how they are called. This is particularly useful for functions like printf() and scanf(), where the number of arguments can vary based on the format string provided.</p>
+                <p><strong>Header Inclusion:</strong> To use va-args, you need to include the stdarg.h header file, which provides macros to handle variadic arguments.</p>
+                <p><strong>va_list Type:</strong> The va_list type is used to hold the variable arguments within the function.</p>
+                <p><strong>va_start(args, last_arg):</strong> Initializes the va_list to point to the first variable argument.</p>
+                <p><strong>va_arg(args, type):</strong> Retrieves the next argument of the specified type from the va_list.</p>
+                <p><strong>va_end(args):</strong> Cleans up the va_list after all arguments have been processed.</p>
+                <h4 class="text-center">String Analysis and Type Conversion</h4>
+                <p>To interpret format characters, you need to develop a logic to analyze the format string and identify corresponding data types. This may include implementing type conversions to ensure that arguments are printed correctly.</p>
+                <h4 class="text-center">Grade</h4>
+                <div>
+                    <img src="images/100.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
         <div class="container">
-            <h1 class="proj-title">FT_PRINTF</h1>
-            <p class="proj-p">This project aims to recreate the printf function in C, one of the most fundamental functions in the language.</p>
-            <p class="proj-p"><img src="images/explanation.png" class="img-down"></p>
-            <p>Check my Ft_Printf on GitHub <a href="https://github.com/vivaccar/Ft_printf">Here.</a></p>
-            <p class="proj-p">When recreating the printf function, you will need to handle formatted strings by interpreting format characters (%d, %i, %c %s, %p, %h, %H) and replacing them with the corresponding values.</p>
-            <h4>Allowed Functions</h4>
-            <p>malloc, free, write, va_start, va_arg, va_copy, va_end</p>
-            <h4>Variadic Arguments</h4>
-            <p class="proj-p">In C programming, va-args (variadic arguments) is a feature that allows functions to accept a variable number of arguments. This means that you can define functions that can take different numbers of arguments depending on how they are called. This is particularly useful for functions like printf() and scanf(), where the number of arguments can vary based on the format string provided.</p>
-            <p class="proj-p"><strong>Header Inclusion:</strong> To use va-args, you need to include the stdarg.h header file, which provides macros to handle variadic arguments.</p>
-            <p class="proj-p"><strong>va_list Type:</strong> The va_list type is used to hold the variable arguments within the function.</p>
-            <p class="proj-p"><strong>va_start(args, last_arg):</strong> Initializes the va_list to point to the first variable argument.</p>
-            <p class="proj-p"><strong>va_arg(args, type):</strong> Retrieves the next argument of the specified type from the va_list.</p>
-            <p class="proj-p"><strong>va_end(args):</strong> Cleans up the va_list after all arguments have been processed.</p>
-            <h4>String Analysis and Type Conversion</h4>
-            <p>To interpret format characters, you need to develop a logic to analyze the format string and identify corresponding data types. This may include implementing type conversions to ensure that arguments are printed correctly.</p>
-            <h4>Grade</h4>
-            <img src="images/100.png">
-        </div>
-        <div class="media">
-            <ul>
-                <li><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
-                <li><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></li></a>
-                <li><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
-            </ul>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="media">
+                        <ul class="list-inline d-flex justify-content-center align-items-center">
+                            <li class="list-inline-item mr-3"><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item mr-3"><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

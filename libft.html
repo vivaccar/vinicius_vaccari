@@ -1,48 +1,76 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Vinicius</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="horizontal-bar">
-            <ul>
-                <a href="index.html"><li class="bar-li"><img src="images/up.png" alt="VINICIUS VACCARI"></li></a>
-                <a href="index.html#about"><li class="bar-li">ABOUT ME</li></a>
-                <a href="index.html#skills"><li class="bar-li">EDUCATION & SKILLS</li></a>
-                <a href="projects.html"><li class="page">42 PROJECTS</li></a>
-            </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Vaccari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"> <!-- Adiciona um container para centralizar os itens -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/up.png" alt="VINICIUS VACCARI" class="img_bar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- Adiciona a classe justify-content-center para centralizar -->
+                <ul class="navbar-nav" style="font-size: 20px;"> <!-- Define o tamanho da fonte -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" style="color: #0D80BF; margin-right: 80px;">ABOUT ME</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills" style="color: #0D80BF; margin-right: 80px;">EDUCATION & SKILLS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">42 PROJECTS</a> <!-- Define a cor do texto e o espaçamento -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="proj-title text-center">LIBFT</h1>
+                <p class="proj-p">In this project, I recreated some useful functions from the C language. I was able to understand how they work and the implementation of each of them.</p>
+                <div class="text-center">
+                    <img src="images/books.png" class="img-down" style="width: 100%;">
+                </div>
+                <br>
+                <p>Check my Libft on GitHub <a href="https://github.com/vivaccar/libft">Here.</a></p>
+                <h4 class="text-center">Introduction to headers files</h4>
+                <p>Header files in C are files containing declarations of functions, variables, and types that are shared across multiple source code files in a program. They have a ".h" extension and are included at the beginning of source code files using the #include preprocessor directive.</p>
+                <h4 class="text-center">Introduction to Makefile</h4>
+                <p>A Makefile is a script used in software development to automate the building and compiling of a program from its source code. It contains a set of rules and instructions that specify how source files are compiled and linked together to create executable binaries.</p>
+                <h4 class="text-center">Mandatory part - Manipulating Strings and Memory</h4>
+                <p>Recreating these C functions fosters a diverse skill set, encompassing string and character manipulation through functions like memset, memcpy, and strtrim. Proficiency in memory management is honed through calloc and strdup, while file I/O skills are developed with functions such as putchar_fd and putstr_fd. The ability to classify characters (e.g., isalpha, isdigit) and compare strings (strncmp, memcmp) is enhanced, as is the expertise in converting characters and numbers (toupper, itoa). Additionally, functions like split, substr, and strnstr contribute to skills in string parsing, substring extraction, and searching algorithms. This comprehensive experience forms a robust foundation in C programming, covering essential aspects of data manipulation and algorithmic tasks.</p>
+                <h4 class="text-center">Bonus part - Understanding Structures and Manipulating Linked Lists</h4>
+                <p>Recreating these linked list functions in C enriches programming skills by focusing on fundamental operations for linked list manipulation. Functions such as lstnew and lstdelone provide experience in creating and deleting list elements, respectively. Managing the size of a linked list is emphasized through lstsize, while lstlast facilitates efficient navigation to the last element. The ability to add elements at the front (lstadd_front) and back (lstadd_back) enhances skills in list insertion operations. Efficiently clearing the entire linked list is achieved with lstclear. Moreover, lstiter and lstmap contribute to skills in iterating through and mapping functions onto linked list elements, reinforcing a well-rounded understanding of linked list manipulation and algorithmic tasks in C programming.</p>
+                <h4 class="text-center">Grade</h4>
+                <div>
+                    <img src="images/125.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
         </div>
         <div class="container">
-            <h1 class="proj-title">LIBFT</h1>
-            <p class="proj-p">In this project, I recreated some useful functions from the C language. I was able to understand how they work and the implementation of each of them.</p>
-            <p class="proj-p"><img src="images/books.png" class="img-down"></p>
-            <p>Check my Libft on GitHub <a href="https://github.com/vivaccar/libft">Here.</a></p>
-            <h4>Introduction to headers files</h4>
-            <p class="proj-p">Header files in C are files containing declarations of functions, variables, and types that are shared across multiple source code files in a program. They have a ".h" extension and are included at the beginning of source code files using the #include preprocessor directive.</p>
-            <h4>Introduction to Makefile</h4>
-            <p class="proj-p">A Makefile is a script used in software development to automate the building and compiling of a program from its source code. It contains a set of rules and instructions that specify how source files are compiled and linked together to create executable binaries.</p>
-            <h4>Mandatory part - Manipulating Strings and Memory</h4>
-            <p class="proj-p">Recreating these C functions fosters a diverse skill set, encompassing string and character manipulation through functions like memset, memcpy, and strtrim. Proficiency in memory management is honed through calloc and strdup, while file I/O skills are developed with functions such as putchar_fd and putstr_fd. The ability to classify characters (e.g., isalpha, isdigit) and compare strings (strncmp, memcmp) is enhanced, as is the expertise in converting characters and numbers (toupper, itoa). Additionally, functions like split, substr, and strnstr contribute to skills in string parsing, substring extraction, and searching algorithms. This comprehensive experience forms a robust foundation in C programming, covering essential aspects of data manipulation and algorithmic tasks.
-
-
-                • isalpha • memset • isdigit • bzero • isalnum • memcpy • isascii • memmove • isprint • strlcpy • strlen • strlcat
-                • toupper • substr • tolower • strjoin • strchr • strtrim • strrchr • split • strncmp • itoa • memchr • strmapi • memcmp • striteri • strnstr • putchar_fd • atoi • putstr_fd • calloc • putendl_fd • strdup • putnbr_fd</p>
-            <h4>Bonus part - Understanding Structures and Manipulating Linked Lists</h4>
-            <p class="proj-p">Recreating these linked list functions in C enriches programming skills by focusing on fundamental operations for linked list manipulation. Functions such as lstnew and lstdelone provide experience in creating and deleting list elements, respectively. Managing the size of a linked list is emphasized through lstsize, while lstlast facilitates efficient navigation to the last element. The ability to add elements at the front (lstadd_front) and back (lstadd_back) enhances skills in list insertion operations. Efficiently clearing the entire linked list is achieved with lstclear. Moreover, lstiter and lstmap contribute to skills in iterating through and mapping functions onto linked list elements, reinforcing a well-rounded understanding of linked list manipulation and algorithmic tasks in C programming.
-
-                • lstnew • lstadd_front • lstsize • lstlast • lstadd_back • lstdelone • lstclear • lstiter • lstmap</p>
-            <h4>Grade</h4>
-            <img src="images/125.png">
-        </div>
-        <div class="media">
-            <ul>
-                <li><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
-                <li><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></li></a>
-                <li><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
-            </ul>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="media">
+                        <ul class="list-inline d-flex justify-content-center align-items-center">
+                            <li class="list-inline-item mr-3"><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item mr-3"><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
