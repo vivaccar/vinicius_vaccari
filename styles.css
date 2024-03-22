@@ -5,7 +5,7 @@
 
 .nav-link{
     color: #0D80BF;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .name {
@@ -46,18 +46,18 @@
 .skills h3{
     color: black;
     font-size: 30px;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .skills li{
     margin-top: 20px;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     color: #555;
 }
 
 .skills p{
     margin-top: 20px;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     color: #555;    
 }
 
