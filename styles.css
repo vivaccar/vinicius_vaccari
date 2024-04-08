@@ -70,9 +70,18 @@
 }
 
 .p-2{
-    margin: 20px;
+    margin: 15px;
 }
 
 .social{
     margin-right: 15px;
+}
+
+.edu-title {
+    font-size: 26px;
+    color: black;
+}
+
+.awards {
+    font-size: 26px;
 }
