@@ -1,0 +1,90 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Vaccari</title>
+    <!-- Inclua os estilos do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"> 
+            <a class="navbar-brand" href="index.html">
+                <img src="images/up.png" alt="VINICIUS VACCARI" class="img_bar">
+            </a>
+            <!-- Botão de navegação responsivo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens da barra de navegação -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" style="color: #0D80BF; margin-right: 80px;">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills" style="color: #0D80BF; margin-right: 80px;">EDUCATION & SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">42 PROJECTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+				<br>
+				<h1 class="proj-title text-center">PHILOSOPHERS</h1>
+				<br>
+				<br>
+                <p class="proj-p">The Dining Philosophers problem is a classic synchronization problem in computer science, originally formulated by Edsger Dijkstra in 1965. It serves as an illustrative example of a problem in concurrent programming, where multiple processes or threads compete for shared resources while avoiding deadlock and starvation.</p>
+                <p>Check my philosophers on GitHub <a href="https://github.com/vivaccar/philosophers">Here.</a></p>
+                <p class="proj-p">The objective of the Dining Philosophers problem is to design a solution that allows all philosophers to alternate between thinking, eating and sleeping without encountering deadlock or starvation. This solution must ensure that philosophers can only eat if they can acquire both chopsticks simultaneously, and must release the chopsticks when they are done eating to allow others to use them. Achieving this objective requires careful synchronization of access to shared resources, such as the chopsticks, to prevent conflicts and ensure fairness among the philosophers.
+				</p>
+				<p><img src="images/philo.png" alt="" style="width: 100%;"></p>
+				<h4 class="text-center">Allowed functions</h4>
+                <p class="proj-p">memset, printf, malloc, free, write,
+					usleep, gettimeofday, pthread_create,
+					pthread_detach, pthread_join, pthread_mutex_init,
+					pthread_mutex_destroy, pthread_mutex_lock,
+					pthread_mutex_unlock</p>
+                <h4 class="text-center">What are Threads?</h4>
+                <p class="proj-p">In computer science, a thread is the smallest unit of execution within a process. Think of a process as a program running on your computer. Within that program, threads are individual paths of execution that can perform tasks concurrently. </p>
+				<h4 class="text-center">Key points about Threads</h4>
+				<p class="proj-p">1. Concurrent Execution: Threads allow multiple tasks to be executed simultaneously within a single process. This concurrency enables programs to perform multiple operations concurrently, improving performance and responsiveness.</p>
+                <p class="proj-p">2. Lightweight: Threads are lightweight compared to processes. They share the same memory space and resources within a process, making thread creation and context switching faster and more efficient than creating and switching between processes.</p>
+				<p class="proj-p">3. Shared Resources: Threads within the same process share resources such as memory, files, and CPU time. This shared access requires careful synchronization to prevent conflicts and ensure data consistency.</p>
+				<p class="proj-p">4. Parallelism: Threads can run in parallel on multi-core processors, where each core executes a separate thread simultaneously. This parallel execution enables programs to leverage the full processing power of modern hardware for faster performance.</p>
+				<h4 class="text-center">What are Mutexes?</h4>
+                <p class="proj-p">Mutex, short for mutual exclusion, is a synchronization primitive used to control access to shared resources by multiple threads or processes. Mutexes are essential for preventing race conditions and ensuring data integrity in concurrent programs.</p>
+                <h4 class="text-center">Key oints about Mutexes</h4>
+                <p class="proj-p">1. Exclusive Access: A mutex allows only one thread or process to access a shared resource at a time. It acts as a gatekeeper, ensuring that no two threads can access the resource simultaneously.</p>
+				<p class="proj-p">2. Locking and Unlocking: Mutexes provide two fundamental operations: locking and unlocking. When a thread wants to access a shared resource, it must first acquire the mutex lock. If the lock is available, the thread acquires it and proceeds to access the resource. After completing its task, the thread releases the mutex by unlocking it, allowing other threads to acquire the lock and access the resource.</p>
+				<p class="proj-p">3. Blocking and Waiting: If a thread attempts to acquire a mutex lock that is already held by another thread, it will be blocked or forced to wait until the lock becomes available. This blocking behavior ensures that threads do not execute concurrently when accessing critical sections of code or shared resources.</p>
+				<p class="proj-p">4. Critical Sections: Mutexes are commonly used to protect critical sections of code, where shared resources are accessed and modified. By enclosing critical sections with mutex locks, programmers can ensure that only one thread executes the code at a time, preventing race conditions and maintaining data consistency.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="media">
+                        <ul class="list-inline d-flex justify-content-center align-items-center">
+                            <li class="list-inline-item mr-3"><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item mr-3"><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
