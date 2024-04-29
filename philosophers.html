@@ -64,7 +64,7 @@
 				<p class="proj-p">4. Parallelism: Threads can run in parallel on multi-core processors, where each core executes a separate thread simultaneously. This parallel execution enables programs to leverage the full processing power of modern hardware for faster performance.</p>
 				<h4 class="text-center">What are Mutexes?</h4>
                 <p class="proj-p">Mutex, short for mutual exclusion, is a synchronization primitive used to control access to shared resources by multiple threads or processes. Mutexes are essential for preventing race conditions and ensuring data integrity in concurrent programs.</p>
-                <h4 class="text-center">Key oints about Mutexes</h4>
+                <h4 class="text-center">Key points about Mutexes</h4>
                 <p class="proj-p">1. Exclusive Access: A mutex allows only one thread or process to access a shared resource at a time. It acts as a gatekeeper, ensuring that no two threads can access the resource simultaneously.</p>
 				<p class="proj-p">2. Locking and Unlocking: Mutexes provide two fundamental operations: locking and unlocking. When a thread wants to access a shared resource, it must first acquire the mutex lock. If the lock is available, the thread acquires it and proceeds to access the resource. After completing its task, the thread releases the mutex by unlocking it, allowing other threads to acquire the lock and access the resource.</p>
 				<p class="proj-p">3. Blocking and Waiting: If a thread attempts to acquire a mutex lock that is already held by another thread, it will be blocked or forced to wait until the lock becomes available. This blocking behavior ensures that threads do not execute concurrently when accessing critical sections of code or shared resources.</p>
