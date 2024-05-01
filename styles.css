@@ -21,7 +21,7 @@
 }
 
 .occupation {
-    font-family: fantasy;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: #666;
     margin-left: 10%;
