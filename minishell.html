@@ -27,7 +27,7 @@
                         <a class="nav-link" href="index.html#skills" style="color: #0D80BF; margin-right: 80px;">EDUCATION & SKILLS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">42 PROJECTS</a>
+                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">PROJECTS</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,34 @@
                 <div>
                     <img src="images/expand.png" class="img-down" style="width: 100%;">
                 </div>
-            </div>
+				<br>
+				<h4 class="text-center">Parser</h4>
+				<p>After tokenizing the input, it's time for the parser to do its job, which involves preparing the program for execution by arranging the commands in the correct "order" to be executed. To achieve this, we chose to use a binary tree data structure, creating three distinct types of nodes: EXEC, REDIR and PIPE</p>
+				<p>EXEC - Contains the exec type, the command and its arguments, and a boolean indicating if the command is builtin or not.</p>
+				<br>
+				<p>REDIR - Contains the redir type, the file name it redirects for, a void pointer to the next node in the tree, and in case of type heredoc, the id and the status of the limiter string.</p>
+				<br>	
+				<p>PIPE - Contains the pipe type and two void pointers, one for the right and other for the left side of the pipe.</p>
+				<br>	
+				<p>To build the tree, we implemented the recursive descent parsing, inspired by the MIT's xv6 kernel project, which concept was totally explained in this <a href="https://www.youtube.com/watch?v=ZjzMdsTWF0U&t=1155s">video.</a></p>
+				<br>	
+				<p>Following the grammar rules using the previous example, we would build our tree as the illustration below:</p>
+				<div>
+                    <img src="images/parser_example.png" class="img-down" style="width: 70%; height: 13%;">
+                </div>
+				<br>
+				<h4 class="text-center">Execution</h4>
+				<p>Now, after building our tree, running our commands becomes much easier. We simply call our run function, a recursive function that takes the tree's root as input and executes the nodes according to the tree's structure.</p>
+				<p>	When it finds a PIPE node the function creates a pipe and two child processes, one for the left and other for the right side of the pipe.</p>
+				<p>	In the first fork, the "pipe's write file descriptor" (fd[1]) is redirected to the process's Standard Output using the dup2 function. The run function is then called recursively, with the node's left pointer passed as a parameter.</p>
+				<p>	In the second fork, the "pipe's read file descriptor" fd[0] is redirected to the process's Standard Input. The run function is called again, this time with the node's right pointer as the parameter.</p>
+				<p>	By doing this, we enable the process on the left side to communicate with the process on the right side, sending its output through the pipe so that the right side reads it as the input for its process, replicating what a pipe do in the shell.</p>
+				<p>	When a REDIR node is found, the function identifies its type, opens the corresponding file, and uses dup2 to redirect the process's input or output accordingly.</p>
+				<p>	Finally, when an EXEC node is encountered, the function checks whether the command is a builtin. If it is, the corresponding builtin function is called, and the process is terminated. If not, execve is called with the command's arguments, the executable's path, and the environment variables. If execve succeeds, it takes over the process, terminating it automatically.</p>
+				<br>
+				<h4 class="text-center">Builtins</h4>
+				<p>No, we did not create all the shell commands from scratch; in fact, we only implemented seven of them, as required by the subject. These commands are echo, cd, export, unset, pwd, exit and env. All other commands are handled by the execve function, so we don't need to worry about them, as their executables already exist in one of the directories listed in the PATH environment variable.</p>
+			</div>
         </div>
     </div>
     <br>
