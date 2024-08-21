@@ -1,0 +1,90 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Vaccari</title>
+    <!-- Inclua os estilos do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"> 
+            <a class="navbar-brand" href="index.html">
+                <img src="images/up.png" alt="VINICIUS VACCARI" class="img_bar">
+            </a>
+            <!-- Botão de navegação responsivo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens da barra de navegação -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" style="color: #0D80BF; margin-right: 80px;">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills" style="color: #0D80BF; margin-right: 80px;">EDUCATION & SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: #0D80BF; margin-right: 30px;">42 PROJECTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="proj-title text-center">MINISHELL</h1>
+                <p class="proj-p">As beautiful as a shell.</p>
+                <div class="text-center">
+                    <img src="images/minishell.gif" class="img-down" style="width: 100%;">
+                </div>
+                <br>
+                <p>Check my minishell on GitHub <a href="https://github.com/vivaccar/42_MINISHELL">Here.</a></p>
+                <h4 class="text-center">ABOUT</h4>
+                <p>Being part of the Rank 03 of the 42 Common Core curriculum, the Minishell project is essentially about creating a simple shell—yes, our own little bash—which my peer Marcelo Fassbinder and I affectionately nicknamed GAUSHELL. Our program replicates the shell environment, prompting a command-line, executing commands with pipes and redirects, manipulating environment variables, handling signals, and supporting various other shell features.</p>
+                <p>The project was divided in three big parts: Tokenizer, Parser and Execution.</p>
+                <h4 class="text-center">Tokenizer</h4>
+                <p>The first thing a shell does when it receives a command-line is to divide the string into tokens, which, as we decided, are categorized into twelve different types: WHITE SPACE, WORD (later considered as a command), PIPE, ENV (dollar sign), REDIRECT_IN, REDIRECT_OUT, DOUBLE REDIRECT_OUT, HEREDOC, SINGLE QUOTE, DOUBLE QUOTE, FILE, and NULL.
+
+                    We also check the status of each token, defined by three types: GENERAL (no quotes), IN_SINGLE_QUOTE, or IN_DOUBLE_QUOTE.
+                    
+                    To better understand, let's demonstrate what the tokenizer does with the following command-line example:</p>
+                <div class="text-center">
+                    <img src="images/tokenizer.png" class="img-down" style="width: 100%;">
+                </div>
+                <br>
+                <h4 class="text-center">Expansion</h4>
+                <p>Before advancing to the Parser, we go through another crucial part of this project: the EXPANSION of environment variables. In this step, we replace the ENV token and its subsequent value with the corresponding value stored in the environment variables. If the token doesn't match any environment variable, it becomes NULL. Additionally, we handle certain edge cases exactly as Bash does.
+
+                    Here are some examples with the echo command that illustrate some different expansions:</p>
+                <div>
+                    <img src="images/expand.png" class="img-down" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="media">
+                        <ul class="list-inline d-flex justify-content-center align-items-center">
+                            <li class="list-inline-item mr-3"><a href="https://github.com/vivaccar"><img src="images/icons8-github-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item mr-3"><a href="https://www.linkedin.com/in/vinicius-vaccari/"><img src="images/icons8-linkedin-50.png" alt="" class="social"></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/vinihehn/"><img src="images/icons8-insta-50.png" alt="" class="social"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
